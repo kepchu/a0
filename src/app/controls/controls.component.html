@@ -1,5 +1,16 @@
 <div>
   <br>
+  <input #ignoreWhitespaces (change)="optionChange('optIgnoreWhitespaces', ignoreWhitespaces.checked)" type="checkbox"/> ignore whitespaces
+  <br>
+  <input #ignoreCase (change)="optionChange('optIgnoreCase', ignoreCase.checked)" type="checkbox"/> ignore case
+  <br>
+  <input #copyingMode (change)="optionChange('optCopyingMode', copyingMode.checked)" type="checkbox"/> copying mode
+  <br>
+  <button (click)="compare()" type="button">compare</button>
+</div>
+
+<!-- <div>
+  <br>
   <input [(ngModel)]="isChecked" (change)="optionChange('optIgnoreWhitespaces', $event)" type="checkbox" name="optIgnoreWhitespaces" value="ignoreWhitespaces" /> ignore whitespaces
   <br>
   <input (change)="optionChange('optIgnoreCase', $event)" type="checkbox" name="optIgnoreCase" value="ignoreCase" /> ignore case
@@ -7,4 +18,4 @@
   <input (change)="optionChange('optCopyingMode', $event)" type="checkbox" name="optCopyingMode" value="copyingMode" /> copying mode
   <br>
   <button (click)="compare()" type="button">compare</button>
-</div>
+</div> -->

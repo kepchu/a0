@@ -11,8 +11,7 @@ export class ControlsComponent implements OnInit {
   ignoreCase: boolean = false;
   copyingMode: boolean = false;
 
-  optionChange(optionId: string, event: any) {
-    let status =  event.target.checked;
+  optionChange(optionId: string, status: boolean) {
 
     switch (optionId) {
       case "optIgnoreWhitespaces":
